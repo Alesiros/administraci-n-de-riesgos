@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.6.42">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Chávez Huapeo Jacqueline">
+<meta name="author" content="Flores Ochoa Sofia Libertad">
+<meta name="author" content="Mendoza Esteban Lizzet">
+<meta name="author" content="López Carmona Audrey Carolina">
+<meta name="author" content="Rosas Moreno Alesi">
+
+<title>Administración de riesgos</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="index_files/libs/clipboard/clipboard.min.js"></script>
+<script src="index_files/libs/quarto-html/quarto.js"></script>
+<script src="index_files/libs/quarto-html/popper.min.js"></script>
+<script src="index_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="index_files/libs/quarto-html/anchor.min.js"></script>
+<link href="index_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="index_files/libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="index_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="index_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="index_files/libs/bootstrap/bootstrap-61be8778b1349d46454b79ea987638ea.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+
+
+</head>
+
+<body>
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+  <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#introducción" id="toc-introducción" class="nav-link active" data-scroll-target="#introducción">Introducción</a></li>
+  <li><a href="#origen-histórico" id="toc-origen-histórico" class="nav-link" data-scroll-target="#origen-histórico">Origen histórico</a>
+  <ul class="collapse">
+  <li><a href="#la-probabilidad" id="toc-la-probabilidad" class="nav-link" data-scroll-target="#la-probabilidad">La probabilidad</a></li>
+  <li><a href="#los-seguros" id="toc-los-seguros" class="nav-link" data-scroll-target="#los-seguros">Los Seguros</a></li>
+  <li><a href="#evolución-de-la-administración-de-riesgos" id="toc-evolución-de-la-administración-de-riesgos" class="nav-link" data-scroll-target="#evolución-de-la-administración-de-riesgos">Evolución de la administración de riesgos</a></li>
+  </ul></li>
+  <li><a href="#casos-prácticos" id="toc-casos-prácticos" class="nav-link" data-scroll-target="#casos-prácticos">Casos prácticos:</a>
+  <ul class="collapse">
+  <li><a href="#el-pavoroso-incendio-que-destruyó-londres-en-1666." id="toc-el-pavoroso-incendio-que-destruyó-londres-en-1666." class="nav-link" data-scroll-target="#el-pavoroso-incendio-que-destruyó-londres-en-1666.">El pavoroso incendio que destruyó Londres en 1666.</a></li>
+  <li><a href="#rms-titanic-de-1912" id="toc-rms-titanic-de-1912" class="nav-link" data-scroll-target="#rms-titanic-de-1912">RMS Titanic de 1912</a></li>
+  <li><a href="#exxon-valdez-1989." id="toc-exxon-valdez-1989." class="nav-link" data-scroll-target="#exxon-valdez-1989.">Exxon Valdez (1989).</a></li>
+  <li><a href="#crisis-financiera-global-2007-2009-basilea-ii." id="toc-crisis-financiera-global-2007-2009-basilea-ii." class="nav-link" data-scroll-target="#crisis-financiera-global-2007-2009-basilea-ii.">Crisis Financiera Global (2007-2009) Basilea II.</a></li>
+  </ul></li>
+  <li><a href="#basilea-i-la-base-de-la-regulación-financiera-internacional" id="toc-basilea-i-la-base-de-la-regulación-financiera-internacional" class="nav-link" data-scroll-target="#basilea-i-la-base-de-la-regulación-financiera-internacional">Basilea I : La base de la regulación financiera internacional</a></li>
+  <li><a href="#origen-y-explicación-de-riskmetrics-y-su-relación-con-basilea" id="toc-origen-y-explicación-de-riskmetrics-y-su-relación-con-basilea" class="nav-link" data-scroll-target="#origen-y-explicación-de-riskmetrics-y-su-relación-con-basilea">Origen y explicación de Riskmetrics y su relación con Basilea</a></li>
+  <li><a href="#conclusiones-grupales" id="toc-conclusiones-grupales" class="nav-link" data-scroll-target="#conclusiones-grupales">Conclusiones Grupales</a></li>
+  <li><a href="#bibliografía" id="toc-bibliografía" class="nav-link" data-scroll-target="#bibliografía">Bibliografía</a></li>
+  </ul>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="index.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li><li><a href="index.pptx"><i class="bi bi-file-slides"></i>Powerpoint</a></li></ul></div></nav>
+</div>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Administración de riesgos</h1>
+</div>
+
+
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Authors</div>
+  <div class="quarto-title-meta-heading">Affiliations</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author">Chávez Huapeo Jacqueline </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            2002159X
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Flores Ochoa Sofia Libertad </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            2209997A
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Mendoza Esteban Lizzet </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            2111029D
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">López Carmona Audrey Carolina </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            2209983D
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Rosas Moreno Alesi </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            2209988C
+          </p>
+      </div>
+  </div>
+
+<div class="quarto-title-meta">
+
+      
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="introducción" class="level1">
+<h1>Introducción</h1>
+<p>La gestión de riesgos se ha convertido en un pilar esencial en el ámbito financiero, empresarial y social. Nos ayuda a anticipar, medir y reducir las amenazas que podrían poner en peligro la estabilidad económica y operativa de personas, organizaciones y países. Sus orígenes se remontan a prácticas antiguas, como el comercio marítimo de los fenicios, griegos y romanos, donde se implementaron mecanismos básicos para protegerse contra la pérdida de barcos y mercancías, dando lugar a los primeros contratos de seguros. Sin embargo, fue en el siglo XVII cuando el enfoque recibió un verdadero impulso científico gracias a las contribuciones de los matemáticos Pascal y Fermat, quienes, a través del cálculo de probabilidades y la teoría de juegos, proporcionaron una base matemática para entender la incertidumbre. Desde entonces, el riesgo dejó de ser visto sólo como un fenómeno aleatorio y comenzó a ser considerado como algo que se puede modelar, gestionar y controlar.</p>
+<p>A lo largo de la historia, varios eventos han subrayado la necesidad de establecer normas y estructuras institucionales para enfrentar imprevistos.</p>
+<p>La evolución de la administración de riesgos es un tema muy interesante que no se puede entender sin mencionar el surgimiento de metodologías cuantitativas como RiskMetrics, desarrollada por J.P. Morgan en los años 90. Esta metodología introdujo el concepto de Value at Risk (VaR), una métrica estandarizada que ayuda a estimar las pérdidas potenciales en condiciones normales de mercado. Gracias a esta innovación, se logró una mayor transparencia y comparabilidad en la gestión del riesgo financiero, convirtiéndose en una herramienta clave para bancos, inversionistas y reguladores.</p>
+<p>Al mismo tiempo, los acuerdos de Basilea I, II y III establecieron las bases normativas para la regulación bancaria a nivel internacional. Estableciendo los niveles de capital y liquidez necesarios para enfrentar situaciones adversas. Aunado, con las diversas metodologías que ofrecen herramientas técnicas para medir, modelar y demostrar el nivel de exposición al riesgo de mercado representan el lado de la intersección de las prácticas financieras, las innovaciones matemáticas y las regulaciones internacionales, así también, consolidan lo los pilares esenciales para una administración de riesgos integral y eficaz.</p>
+</section>
+<section id="origen-histórico" class="level1">
+<h1>Origen histórico</h1>
+<section id="la-probabilidad" class="level2">
+<h2 class="anchored" data-anchor-id="la-probabilidad">La probabilidad</h2>
+<p>El origen de la administración de riesgos presenta sus bases desde varias civilizaciones atrás. Un precursor fundamental para empezar a plantear la necesidad de gestionar, administrar y manejar los peligros y amenazas se debe a los juegos de azar, sobre todo al inicio con la aparición del concepto de probabilidad.</p>
+<p>En el siglo XVII sobre todo en la clase alta francesa se empezaron a asentar los pilares para la resolución de problemas de apuestas, en la búsqueda de la resolución de estos problemas los matemáticos Pascal y Fermat permitieron dar origen a los principios del Cálculo de probabilidades y la Teoría de Juegos.</p>
+<p>Con esto, el estudio de los escenarios cambiantes en la toma de decisiones se convirtieron en una herramienta para resolver la mejor manera de controlar o distribuir el riesgo.</p>
+</section>
+<section id="los-seguros" class="level2">
+<h2 class="anchored" data-anchor-id="los-seguros">Los Seguros</h2>
+<p>Por otro lado, también se asocia el desarrollo del concepto con la aparición de los seguros y su gestión de riesgos contingentes, con el comercio marítimo practicado en la época clásica por los griegos y los romanos, pero también desde mucho antes por los fenicios, quienes sentaron las bases de esta actividad en el mundo antiguo. Desde entonces existía un contrato simple: se fijaba un monto a pagar (menor o igual al costo del barco y su carga), y sobre éste se acordaba un porcentaje que se pagaba de inicio. Si la embarcación no llegaba a su destino se pagaría, de forma obligatoria, el monto preestablecido.&nbsp;</p>
+<p>Los encargados de pagar estos montos fueron los primeros aseguradores que eran personas físicas que asumían individualmente uno o varios riesgos. Durante el siglo XVII cambió un poco esta dinámica, pues ahora estas personas se asociaban y creaban un fondo de contribuciones, creando a su vez las primeras aseguradoras formales donde pasaban a repartir el riesgo que corrían las embarcaciones de ser asaltadas, perder la mercancía, naufragio o incluso el secuestro o pérdida de la tripulación. De manera que, ahora todos estos riesgos eran asumidos entre varios miembros que eran los que conformaban la asociación, en lugar de que recayera en una sola persona.&nbsp;</p>
+<p>Es por ello que el estudio de la gestión de riesgos se ha asociado desde hace tiempo con el uso de seguros para proteger a personas y empresas de diversas pérdidas asociadas con accidentes.&nbsp;</p>
+</section>
+<section id="evolución-de-la-administración-de-riesgos" class="level2">
+<h2 class="anchored" data-anchor-id="evolución-de-la-administración-de-riesgos">Evolución de la administración de riesgos</h2>
+<p>Con el paso del tiempo,, la tendencia general en el uso actual del término “Administración de Riesgo” comenzó a escucharse a principios de los años 1950, una de las primeras referencias a este concepto proponía que alguien dentro de la empresa u organización debería ser responsable de administrar los riesgos puros de la organización. Para estos tiempos los corporativos solo contaban con un puesto conocido como administrador de seguros pero estos se percibían como muy costosos e incompletos para la protección contra el riesgo puro.</p>
+<p>La transición de Administración de Seguros a Administración de Riesgos ocurrió en un periodo de tiempo paralelo al desarrollo de la disciplina académica de la administración de riesgos. Esto debido a que a mitad del siglo XX, en los Estados Unidos de Norteamérica se dio inicio a un proceso orientado a la investigación del riesgo como tal, que trataba de definir su naturaleza, terminología, componentes y selección de herramientas para poder enfrentarlo con eficacia.</p>
+<p>El uso de derivados como instrumentos de gestión de riesgos surgió durante la década de 1970 y se expandió rápidamente durante la década de 1980 con la gestión de riesgos por procesos en la medida que las empresas intensificaban su gestión de riesgos financieros.&nbsp;</p>
+<p>La regulación internacional de riesgos comenzó en la década de 1980, y las entidades financieras desarrollaron modelos internos de gestión de riesgos y fórmulas de cálculo de capital para protegerse contra riesgos imprevistos y reducir el capital regulatorio.&nbsp;</p>
+<p>Posteriormente, en la década de los 90 se acoge el concepto del riesgo vinculado en las acciones, así, anticipando eventos y su impactos futuros, como también el control preventivo.</p>
+<p>Simultáneamente, la gobernanza de la gestión de riesgos se volvió esencial, se introdujo la gestión integrada de riesgos y se crearon los puestos de director de riesgos.</p>
+</section>
+</section>
+<section id="casos-prácticos" class="level1">
+<h1>Casos prácticos:</h1>
+<section id="el-pavoroso-incendio-que-destruyó-londres-en-1666." class="level2">
+<h2 class="anchored" data-anchor-id="el-pavoroso-incendio-que-destruyó-londres-en-1666.">El pavoroso incendio que destruyó Londres en 1666.</h2>
+<p>El 2 de septiembre de 1666 en Londres, un incendio se desató alrededor de las 2 de la madrugada en la tienda del panadero Thomas Farryner en Pudding Lane, a los costados del norte de Támesis.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="londres.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="color: gray"></p>
+</figure>
+</div>
+<p>La paja y la madera de las techumbres y paredes de cada uno de los hogares estaban enormes y secas, así motivando la expansión de las llamaradas, provocando la destrucción de múltiples edificios.</p>
+<p>A partir de aquel suceso surgieron las primeras aseguradoras de incendios, como la aseguradora “Fire Offices” asociadas a Nicholas Barbon. Con dicho acontecimiento se comenzaron a realizar brigadas vinculadas con las pólizas y se estandarizaron coberturas.</p>
+<p>A partir de este suceso de catástrofe urbana se revelaron correlaciones, es decir, lo llamado actualmente (riesgo catastrófico), fuerzan tarificación, prevención y normas constructivas..</p>
+</section>
+<section id="rms-titanic-de-1912" class="level2">
+<h2 class="anchored" data-anchor-id="rms-titanic-de-1912">RMS Titanic de 1912</h2>
+<p>El accidente en el que el transatlántico británico colisionó con un iceberg en la noche del 14 de abril de 1912, pues el sistema de controles de seguridad fallo, provocando el naufragio el 15 de abril y causando la muerte de más de 1,500 de sus pasajeros en el accidente y tripulantes a bordo.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="titanic.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="color: gray;"></p>
+</figure>
+</div>
+<p>Posteriormente se llevaron a cabo cambios importantes en las normas de seguridad marítima, principalmente por la falta de botes salvavidas para todos los que se encontraban a bordo. Problema ocasionado por la normativa de la época basada en el tamaño del barco, no en el número de personas y la ignorancia de advertencias sobre la catástrofe de icebergs</p>
+<p>La comunidad internacional adoptó el convenio SOLAS (International Convention for the Safety of Life at Sea), vigente 1974, estándar central de seguridad marítima, donde se establece normas mínimas para la construcción, equipamiento y operación de buques mercantes para garantizar la seguridad de la vida en el mar. Con esto, los desastres no asegurables desencadenaron regulaciones técnicas y mejoras de control que reducen severidad.</p>
+</section>
+<section id="exxon-valdez-1989." class="level2">
+<h2 class="anchored" data-anchor-id="exxon-valdez-1989.">Exxon Valdez (1989).</h2>
+<p>El jueves 23 de marzo de 1989, el petrolero Exxon Valdez salió de la Terminal de Olpeos Alyeska en Valdez, Alaska. A medianoche del 24 de marzo el barco encalló duramente en Bligh Reef. Así derramando alrededor de&nbsp; 262.000 barriles (11 millones de galones) de crudo Alaska North Slope en las aguas del Prince William Sound. Con los medios y herramientas de esta los socorristas federales, estatales y Exxon no pudieron hacer frente a una catástrofe de esta escala.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="exxon.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+<p>Así, surgió la ley de contaminación por hidrocarburos de 1990 (Oil Pollution Act 1990) “OPA90 enfocada a fortalecer la prevención y respuesta (planes obligatorios, fondo fiduciario financiado por impuestos y mayor&nbsp; responsabilidad).</p>
+<p>El derrame de Exxon Valdez se ubicó como el punto de referencia con el que se medirían todos los demás derrames y respuestas de derrame de Estados Unidos: en escala, alcance, costo, controversia, la subestimación de riesgos de crédito, mercado, apalancamiento y fallas de liquidez, etc.</p>
+</section>
+<section id="crisis-financiera-global-2007-2009-basilea-ii." class="level2">
+<h2 class="anchored" data-anchor-id="crisis-financiera-global-2007-2009-basilea-ii.">Crisis Financiera Global (2007-2009) Basilea II.</h2>
+<p>La crisis comenzó con un aumento en los impagos de las hipotecas en Estados Unidos, otorgadas a usuarios con poca capacidad de pago. Se creó una burbuja en el mercado inmobiliario estadounidense, donde los precios de las viviendas subieron de manera exponencial, lo que provocó una sobreinversión y la construcción de demasiadas casas.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="crisis.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+<p>La tasa de interés que los bancos cobraban a sus clientes&nbsp; de bajo riesgo (generalmente tres puntos porcentuales por encima de la tasa de fondos federales) los alentó a prestar incluso a clientes&nbsp; de alto riesgo, a tasas de interés más altas.&nbsp;</p>
+<p>Los bancos de inversión englobaron estas hipotecas en productos financieros complejos y las revendieron a otros bancos, sin considerar otros aspectos, causando una gran disminución de la liquidez, la quiebra del banco de inversión Lehman Brothers, una Gran Recesión global con desempleo masivo y la necesidad de rescates gubernamentales para bancos en riesgo de quiebra.</p>
+</section>
+</section>
+<section id="basilea-i-la-base-de-la-regulación-financiera-internacional" class="level1">
+<h1>Basilea I : La base de la regulación financiera internacional</h1>
+<p>El Comité de supervisión bancaria de Basilea se constituye en 1974 dado la crisis que se originó por la insolvencia de los bancos Bankhaus Herstatt y Franklin National Bank , se observó la necesidad de crear un marco regulatorio internacional que tuviera como objetivo principal regular las actividades de los bancos con el fin de asegurar estabilidad en el sistema financiero internacional. El Comité inicialmente se conformó por los presidentes de los bancos centrales más importantes del mundo conocidos como el Grupo de los Diez (G-10) cuyos miembros son Bélgica, Canadá, Francia, Alemania, Italia, Japón, Países Bajos, Suecia, Suiza, Reino Unido y Estados Unidos, aunque Suiza desempeña un papel menor.</p>
+<p>Antes de la creación del primer acuerdo de basilea , las instituciones financieras se enfrentan a una alta volatilidad debido a las crisis bancarias , por lo que el objetivo era estabilidad financiera.</p>
+<p>Basilea I&nbsp; es el primer conjunto de regulaciones que constituye el comité de supervisión bancaria de Basilea y fue implementado en 1988. En ella el comité define los requisitos mínimos de capital con el que los bancos debían de contar para hacer frente a los riesgos de crédito, mercado y tipo de cambio. Estos mínimos se calculan como un porcentaje de los activos ponderados por riesgo, manteniendo un capital mínimo del 8% sobre esos activos.</p>
+<p>Aún cuando el acuerdo de Basilea I buscaba fortalecer el sistema bancario internacional, muchas instituciones nacionales aplicaron este acuerdo de modo que mejoró la seguridad de estos sistemas bancarios.&nbsp;</p>
+<p>Aunque el acuerdo Basilea I fue de gran ayuda y dio una base para la estabilidad financiera en los bancos tuvo algunas limitaciones, al enfrentarse a las nuevas realidades puesto el criterio era muy simple y no lograba abarcar la complejidad de los riesgos de crédito de manera global. Además de que dada la complejidad de las relaciones entre bancos, la regulación debía evolucionar para abordar estos nuevos desafíos.</p>
+<p>A pesar de esas limitaciones, Basilea I sirvió como punto de partida para las regulaciones financieras internacionales que vinieron después, como Basilea II y Basilea III, las cuales se han ido perfeccionando para manejar mejor los riesgos financieros y hacer que el sector bancario sea más transparente.</p>
+<p>En resumen, Basilea I es un punto clave en la regulación bancaria internacional, porque estableció los niveles mínimos de capital que los bancos deben mantener.</p>
+</section>
+<section id="origen-y-explicación-de-riskmetrics-y-su-relación-con-basilea" class="level1">
+<h1>Origen y explicación de Riskmetrics y su relación con Basilea</h1>
+<p>RiskMetrics es una metodología desarrollada por J.P. Morgan en la década de 1980. En el año de 1994 se hizo su publicación en RiskMetrics Technical Document, se hizo pública la metodología para medir y gestionar el riesgo financiero, especialmente el riesgo de mercado. Esta metodología revolucionó la gestión de los riesgos en los mercados globales puesto que su objetivo era mejorar la transparencia de los riesgos del mercado, creando un punto de referencia para medirlos y de esta forma proporcionar mejor información en cuanto a ellos.&nbsp;</p>
+<p>En esta metodología se utilizaron datos históricos para pronosticar la volatilidad de los precios de los activos y las correlaciones entre ellos, esto permitió calcular el Valor en Riesgo (VaR) y tomarlo como una medida de referencia.&nbsp;</p>
+<p>El VaR estima la pérdida máxima esperada de un activo durante un periodo determinado para un intervalo de confianza determinado. Esta medida se convirtió en un estándar ya que brinda una forma comparable de cuantificar el riesgo.&nbsp;</p>
+<p>RiskMetrics se basa en dos supuestos de modelado fundamentales:</p>
+<ol type="1">
+<li>La rentabilidad de los factores de riesgo se distribuye normalmente, lo que significa que el precio de los activos financieros o los factores de riesgo se modelan como si siguieran una distribución normal.</li>
+</ol>
+<!-- -->
+<ol start="2" type="1">
+<li>La volatilidad de los factores de riesgo se estima mejor utilizando una media -móvil ponderada exponencialmente de las rentabilidades pasadas, es decir que no se calcula un simple promedio histórico, sino que tiene mayor peso a lo que ocurre en el corto plazo.</li>
+</ol>
+<p>Aunque Riskmetrics se basa en los dos supuestos anteriores, es importante destacar que estos presentan algunas limitaciones en cuanto a los resultados que obtenemos, puesto la hipótesis de normalidad puede resultar poco realista. En la práctica en los mercados existen crisis o eventos extremos.</p>
+<p>Aún con estas limitaciones, RiskMetrics representó un punto clave en la gestión del riesgo financiero porque ofreció por primera vez una metodología estandarizada para medirlo. Su publicación permitió el acceso a este tipo de herramientas de manera transparente a todas las instituciones financieras, algo que hasta ese entonces solo era propio de las grandes instituciones financieras. Esto les permitió a&nbsp; las instituciones financieras mejorar sus procesos de toma de decisiones puesto que lo hacían de una manera más informada.</p>
+<p>Recordando un poco de lo que es <strong>Basilea I</strong> nos damos cuenta que es un acuerdo regulatorio internacional (1988) emitido por el Comité de Basilea, no es una “guía técnica”, es norma mínima que los supervisores bancarios adoptan en sus países, que buscan homogeneizar criterios de solvencia entre bancos.<br>
+Mientras que <strong>Basilea II</strong> al igual que Basilea I también es una regulación internacional (2004),&nbsp; sin embargo en este se agregan cambios en los que se amplía el marco introduciendo tres pilares,capital mínimo, supervisión y disciplina de mercado, haciéndolo más flexible y “sensible al riesgo” que Basilea I,<strong>Basilea III</strong> &nbsp;fue unaregulación posterior a la crisis de 2007-2009, que viene a endurecer la calidad y cantidad de capital, crea colchones y añade ratios de liquidez y apalancamiento.</p>
+<p>Recapitulando un poco lo que es RiskMetrics por JP Morgan, recordemos que es un marco metodológico no como tal una ley para medir riesgo de mercado, centrado en VaR, usando varianza-covarianza (delta-normal) y EWMA el cual es un&nbsp; gráfico de control de medias móviles ponderadas exponencialmente, el cual es una herramienta estadística utilizada para supervisar procesos y detectar cualquier cambio o variación que se produzca a lo largo del tiempo. Es un método popular en el control estadístico de procesos (CEP) y en la gestión de la calidad, ya que permite detectar pequeños cambios o tendencias en los datos. para volatilidades/correlaciones. Este método lo suelen utilizar&nbsp; bancos y gestoras como herramienta interna.</p>
+<p>De acuerdo a la temporalidad de Basilea I no tiene mayor relación con RiskMetrics, al igual que este mismo su objetivo principal es medir el riesgo de mercado de una cartera, a través de métricas como el VaR(Value at Risk), mientras que Basilea I estaba enfocado en riesgo de crédito, el hecho de que el banco tuviera al menos un 8% de capital mínimo.</p>
+<p>Pero una vez que comenzamos a adentrarnos en lo que es Basilea II y III comienza a hacerse mención de lo que es el riesgo de mercado donde el RiskMetrics es bastante oportuno ya que permite estimar cuantitativamente la probabilidad de pérdidas en condiciones normales en el mercado.&nbsp;&nbsp;</p>
+<p>Basilea&nbsp; lo que pide es que demuestres el riesgo que calculaste y cuánto estimas&nbsp; que perderás y cuánto deberías tener en reservas mientras que RiskMetrics entrega una métrica cuantitativa que Basilea acepta para riesgo de mercado, lo cual permite que sea posible demostrar el riesgo de mercado</p>
+<p>En resumen&nbsp; Basilea define cuánto capital y liquidez necesitas, RiskMetrics te ayuda a medir el riesgo de mercado (VaR) que entra a ese cálculo, el supervisor valida el modelo, hace backtesting, y puede ajustar el multiplicador, Basilea III añade colchones y liquidez para absorber shocks, más allá del mero VaR.</p>
+</section>
+<section id="conclusiones-grupales" class="level1">
+<h1>Conclusiones Grupales</h1>
+<p>A lo largo de la historia, los desastres y crisis han impulsado el desarrollo de herramientas precisas para medir y mitigar riesgos. Esto ha dejado claro que el sistema financiero no se autorregula, sino que es necesario contar con un marco normativo común. En este contexto, Basilea I marcó un punto clave en la regulación financiera internacional al establecer requisitos mínimos de capital para los bancos, lo permitió fortalecer la solidez y estabilidad del sistema financiero global. Aunque con el tiempo se tuvieron diferentes limitaciones, este fue el punto de partida que dio paso a regulaciones más avanzadas, como Basilea II y Basilea III.&nbsp;</p>
+<p>Por lo que la gestión de riesgos se presenta como una disciplina que evoluciona junto a los cambios sociales, económicos y tecnológicos. Cada evento histórico ha demostrado que, aunque el riesgo es inevitable, puede ser manejado de manera más efectiva mediante la combinación de marcos regulatorios sólidos y herramientas cuantitativas como RiskMetrics. Estas herramientas no solo han aumentado la transparencia y confianza en los mercados, sino que también ha proporcionado a las instituciones financieras mejores mecanismos para anticipar pérdidas, fortalecer su liquidez y mantener la estabilidad en tiempos de alta incertidumbre.</p>
+<p>En resumen, el avance de la regulación internacional y de los modelos de medición de riesgos confirma que el aprendizaje que se ha tenido de las crisis pasadas ha sido fundamental para diseñar un sistema financiero más estable. El desafío que se tiene hacia el futuro será mantener un equilibrio entre el cumplimiento normativo y la capacidad de adaptación ante nuevos riesgos globales, asegurando que la gestión de riesgos siga siendo una herramienta estratégica para la estabilidad y el desarrollo económico a nivel mundial.</p>
+</section>
+<section id="bibliografía" class="level1">
+<h1>Bibliografía</h1>
+<p>Van Greuning, H., Brajovic Bratanovic, S., (2009), Análisis del riesgo bancario: Marco para valorar la gobernabilidad societaria y la administración de riesgos, Washington DC, USA: The International Bank for Reconstruction and Development/The World Bank</p>
+<p>Rodríguez, R. M. (2024, 29 agosto). Basilea I: Acuerdo bancario y normas de capital. Formarse. <a href="https://www.formarse.es/basilea-i-acuerdo-bancario-y-normas-de-capital/" class="uri">https://www.formarse.es/basilea-i-acuerdo-bancario-y-normas-de-capital/</a></p>
+<p>Ruiz, R. (2023, 6 septiembre). Basilea I – Qué es, definición y concepto. S&amp;F. <a href="https://www.segurosyfinanzashoy.com/basilea-i-que-es-definicion-y-concepto/" class="uri">https://www.segurosyfinanzashoy.com/basilea-i-que-es-definicion-y-concepto/</a></p>
+<p>Holton, G. (2016, 4 julio). 1.9.5 RiskMetrics. Value-at-Risk. <a href="https://www.value-at-risk.net/riskmetrics/" class="uri">https://www.value-at-risk.net/riskmetrics/</a></p>
+<p>Return to RiskMetrics: the Evolution of a Standard. (s. f.). MSCI. <a href="https://www.msci.com/www/research-report/return-to-riskmetrics-the/019088036" class="uri">https://www.msci.com/www/research-report/return-to-riskmetrics-the/019088036</a></p>
+<p>Luna, J. (2025, mayo). Dos décadas de evolución en la gestión de riesgo empresarial. Delineando Estrategias. <a href="https://www.delineandoestrategias.com.mx/blog/dos-decadas-de-evolucion-en-la-gestion-de-riesgo-empresarial" class="uri">https://www.delineandoestrategias.com.mx/blog/dos-decadas-de-evolucion-en-la-gestion-de-riesgo-empresarial</a></p>
+<p>Un poco de historia | ¿Cuál es la probabilidad? (s. f.). Ceilbal. <a href="https://rea.ceibal.edu.uy/elp/cu_l_es_la_probabilidad/un_poco_de_historia.html#:~:text=La%20probabilidad%20naci%C3%B3%20de%20la,y%20sigue%20investigando%20el%20tema!&amp;text=Your%20browser%20can't%20play%20this%20video.&amp;text=An%20error%20occurred.,is%20disabled%20in%20your%20browser">https://rea.ceibal.edu.uy/elp/cu_l_es_la_probabilidad/un_poco_de_historia.html#:~:text=La%20probabilidad%20naci%C3%B3%20de%20la,y%20sigue%20investigando%20el%20tema!&amp;text=Your%20browser%20can’t%20play%20this%20video.&amp;text=An%20error%20occurred.,is%20disabled%20in%20your%20browser</a>.</p>
+<p>Evolución de la gestión de los riesgos en el mundo. (2019, 21 febrero). Instituto Europeo de Posgrado. <a href="https://iep.edu.es/evolucion-gestion-riesgos-mundo" class="uri">https://iep.edu.es/evolucion-gestion-riesgos-mundo</a>/</p>
+<p>Historia del desarrollo de la gestión de riesgos. (2025, 2 junio). Financial Crime Academy. <a href="https://financialcrimeacademy.org/es/historia-del-desarrollo-de-la-gestion-de-riesgos/" class="uri">https://financialcrimeacademy.org/es/historia-del-desarrollo-de-la-gestion-de-riesgos/</a></p>
+<p>Sanvisens, D. (2021a, julio 15). La teoría de la probabilidad y gestión de riesgos. Editorial Profit. <a href="https://www.profiteditorial.com/la-teoria-de-la-probabilidad-y-gestion-de-riesgos/" class="uri">https://www.profiteditorial.com/la-teoria-de-la-probabilidad-y-gestion-de-riesgos/</a></p>
+<p>Castillo, C. (2004). LA ADMINISTRACIÓN DE RIESGOS COMO LA MEJOR FORMA DE PREVENIR EL RIESGO [Tesis de licenciatura, Universidad Nacional Autónoma de México]. <a href="https://tesiunamdocumentos.dgb.unam.mx/ppt2004/0333050/0333050.pdf" class="uri">https://tesiunamdocumentos.dgb.unam.mx/ppt2004/0333050/0333050.pdf</a></p>
+<p>Dionne, G. (2013). Risk Management: History, Definition, and Critique. Risk Management and Insurance Review (16). <a href="https://onlinelibrary.wiley.com/doi/full/10.1111/rmir.12016" class="uri">https://onlinelibrary.wiley.com/doi/full/10.1111/rmir.12016</a></p>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
